@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다양한 입력 타입 테스트</title>
+</head>
+<body>
+    <h1>다양한 입력 타입 테스트</h1>
+
+    <form action="#" method="post">
+        <div>
+            <label for="test">Text:</label>
+            <input type="text" id="test" name="test" autofocus>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div>
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search">
+        </div>
+
+        <div>
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url">
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div>
+            <label for="tel">Tel:</label>
+            <input type="tel" id="tel" name="tel">
+        </div>
+
+        <div>
+            Checkbox:
+            <input type="checkbox" id="checkbox1" name="checkbox1" value="value1">
+            <label for="checkbox1">옵션 1</label>
+            <input type="checkbox" id="checkbox2" name="checkbox2" value="value2">
+            <label for="checkbox2">옵션 2</label>
+        </div>
+
+        <div>
+            Radio:
+            <input type="radio" id="radio1" name="radio" value="option1">
+            <label for="radio1">옵션 A</label>
+            <input type="radio" id="radio2" name="radio" value="option2">
+            <label for="radio2">옵션 B</label>
+        </div>
+
+        <div>
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number" min="0" max="100" step="10" value="50">
+        </div>
+
+        <div>
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" min="0" max="100" step="10" value="50" oninput="document.getElementById('selected-value').innerText = this.value">
+            <span id="selected-value">50</span>
+        </div>
+
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+        </div>
+
+        <div>
+            <label for="month">Month:</label>
+            <input type="month" id="month" name="month">
+        </div>
+
+        <div>
+            <label for="week">Week:</label>
+            <input type="week" id="week" name="week">
+        </div>
+
+        <div>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time">
+        </div>
+
+        <div>
+            <label for="datetime-local">Datetime-local:</label>
+            <input type="datetime-local" id="datetime-local" name="datetime-local">
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+
+        <div>
+            <label for="image-button">Image Button:</label>
+            <input type="image" id="image-button" src="/04/images/salad.jpg"
+                 onclick="window.open('./04/link-2.html','_blank','width=300,height=400')" alt="Image Button" width="50" height="50">
+        </div>
+
+        <div>
+            <button type="button" value="클릭!!">Button</button>
+        </div>
+
+        <div>
+            <label for="file">File:</label>
+            <input type="file" id="file" name="file">
+        </div>
+
+        <div>
+            <input type="hidden" id="hidden" name="hidden" value="hidden-value">
+        </div>
+    </form>
+</body>
+</html>
